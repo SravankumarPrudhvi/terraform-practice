@@ -1,6 +1,4 @@
-provider "aws" {
-  region = "ap-sout-1"
-}
+
 
 module "vpc" {
   source = "https://github.com/SravankumarPrudhvi/terraform-practice.git//vpc"

@@ -20,8 +20,8 @@ resource "aws_security_group" "ec2_sg" {
 
 resource "aws_instance" "ec2_modules" {
   ami                      = var.ami_id
-  instance_type =          = var.instance_type
-  subnet_id =              =var.subnet_id
+  instance_type           = var.instance_type
+  subnet_id               =var.subnet_id
   associate_public_ip_address = true
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
 
