@@ -30,3 +30,8 @@ variable "ami_id" {
     variable "allowed_ssh_cidr" {
       type = list(string)
     }
+
+    variable "key_name" {
+      description = "secreate key value"
+      type = string
+    }

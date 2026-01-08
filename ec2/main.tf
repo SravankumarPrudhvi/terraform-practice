@@ -24,7 +24,7 @@ resource "aws_instance" "ec2_modules" {
   subnet_id               =var.subnet_id
   associate_public_ip_address = true
   vpc_security_group_ids = [aws_security_group.ec2_sg.id]
-
+  key_name = var.key_name
 
 tags ={
   name = "app-ec2-${var.env}"
