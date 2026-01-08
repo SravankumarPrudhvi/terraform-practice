@@ -26,3 +26,7 @@ variable "ami_id" {
         
       }
     }
+
+    variable "allowed_ssh_cidr" {
+      type = list(string)
+    }

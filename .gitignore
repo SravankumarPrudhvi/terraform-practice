@@ -5,6 +5,7 @@ terraform.tfstate.backup
 terraform.tfstate.*
 *.backup
 
+
 #variables file (may contain secreats)
 *.tfvars
 *.tfvars.json

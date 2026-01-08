@@ -20,6 +20,10 @@ variable "env" {
   
 }
 
+variable "availability_zones" {
+  description = "availability zone"
+  type = list(string)
+}
 variable "tags" {
     type = map(string)
     default = {
