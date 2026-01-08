@@ -1,0 +1,26 @@
+# Environment name
+env = "dev"
+
+# AWS region
+region = "us-east-1"
+
+# VPC
+vpc_cidr = "10.0.0.0/16"
+
+# Subnets
+public_subnets = [
+  "10.0.1.0/24",
+  "10.0.2.0/24"
+]
+
+private_subnets = [
+  "10.0.101.0/24",
+  "10.0.102.0/24"
+]
+
+# EC2
+ami_id        = "ami-xxxxxxxx"
+instance_type = "t2.micro"
+
+# Security
+allow_ssh_cidrs = ["x.x.x.x/32"]
